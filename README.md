@@ -27,8 +27,6 @@ Things you may want to cover:
 |Column|Type|Options|
 |------|----|-------|
 |name|varchar(255)|null: false,add_index: true|
-|email|varchar(255)|null: false,unique: true|
-|password|varchar|null: false|
 
 ### Association
 - has many :messages
