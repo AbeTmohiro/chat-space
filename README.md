@@ -26,7 +26,7 @@ Things you may want to cover:
 ## usersテーブル
 |Column|Type|Options|
 |------|----|-------|
-|name|varchar(255)|null: false,add_index: true|
+|name|string|null: false,add_index: true|
 
 ### Association
 - has many :messages
