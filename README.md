@@ -36,7 +36,7 @@ Things you may want to cover:
 ## groupsテーブル
 |Column|Type|Options|
 |------|----|-------|
-|group_name|varchar(256)|null: false,unique: true|
+|name|varchar(256)|null: false,unique: true|
 
 ### Association
 - has_many :groups_users
