@@ -154,23 +154,21 @@ color:#000000;
         color: #ffffff;
         text-decoration: none;
         font-size: 16px;
-        }
-        }
+      }
     }
   }
+}
 
   &__groups{
     height: calc(100vh - 100px);
     padding-top: 20px;
     padding-right: 20px;
     padding-left: 20px;
-    
     p {
       color: #ffffff;
       text-decoration: none;
       font-weight: bold;
     }
-
     @import "group";
-}
+  }
 }
