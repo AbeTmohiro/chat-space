@@ -1,0 +1,169 @@
+* {
+  box-sizing: border-box;
+  }
+
+.chat-main{
+  float: right;
+  width: calc(100vw - 300px);
+  background-color: $white;
+  &__main-header{
+    background-color:$white;
+    height: 100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 40px;
+    padding-left: 40px;
+    &__left-box{
+      margin-top: 35px;
+      &__current-group{
+        margin-bottom: 15px;
+        p{
+          font-size:20px ;
+          color: $dark-gray;
+        }
+      }
+      &__member-list{
+        display: flex;
+        p{
+          font-size: 12px;
+          color:$light-gray;
+        }
+      }
+    }
+    &__edit-btn{
+      width: 72px;
+      line-height: 40px;
+      padding-right: 20px;
+      padding-left: 20px;
+      margin-top: 28px;
+      border: solid 1px $sky-blue;
+      position: absolute;
+      right: 40px;
+      a{
+        font-size: 16px;
+        text-decoration: none;
+        color:$sky-blue;
+      }
+    }
+  }
+  &__messages{
+    height: calc(100vh - 190px);
+    background-color: $messages-color;
+    padding-top: 35px;
+    padding-left: 40px;
+    @import "message";
+  }
+  .form{
+    background-color: $form-color;
+    height: 90px;
+    padding-top: 20px;
+    padding-right: 40px;
+    padding-bottom: 20px;
+    padding-left: 40px;
+    display: flex;
+    .new_message{
+      line-height: 50px;
+      padding-left: 10px;
+      padding-right: 10px;
+      width: 100%;
+      .input-box{
+        position: relative;
+        width: 100%;
+        background-color: $white;
+        display: flex;
+        &__text{
+          padding-left: 10px;
+          height: 50px;
+          input{
+            border-style: none;
+            color: $input-box-color;
+            outline: none;
+          }
+        }
+        &__image{
+          position: absolute;
+          right: 10px;
+          font-size: 1.3rem;
+          input{
+            display: none;
+          }
+        }
+      }
+      .input-box:hover{
+        outline: 2px solid rgba($color: $sky-blue, $alpha: 0.5);
+      }
+    }
+    .submit-btn{
+      width: 100px;
+      line-height: 50px;
+      padding-right: 30px;
+      padding-left: 30px;
+      margin-left: 15px;
+      background-color: $sky-blue;
+      a{
+        color: $white;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.chat-side{
+float: left;
+width: 300px;
+height: 100vh;
+background-color: $chat-side-color;
+color: $black;
+&__side-header{
+  display: flex;
+  align-items: center;
+  background-color: $side-header-color;
+  height: 100px;
+  padding-right: 20px;
+  padding-bottom: 0px;
+  padding-left: 20px;
+  &__box{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 20px;
+    font-weight: bold;
+    &__user-name{
+      display: block;
+      a {
+        color:$white;
+        text-decoration: none;
+        font-size: 16px;
+        }
+    }
+    &__menu{
+      width: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      &__edit-user{
+        padding-left: 5px;
+      }
+      a {
+        color:$white;
+        text-decoration: none;
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+  &__groups{
+    height: calc(100vh - 100px);
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
+    p {
+      color: $white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    @import "group";
+  }
+}
