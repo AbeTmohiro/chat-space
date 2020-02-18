@@ -1,12 +1,7 @@
 * {
   box-sizing: border-box;
   }
-
-            color: #333333;
-$white: #ffffff;
-$sky-blue:#38aef0;
-$dark-gray: #333333;
-$light-gray: #999999;
+@import "variables/colors";
 
 .chat-main{
   float: right;
@@ -55,13 +50,13 @@ $light-gray: #999999;
   }
   &__messages{
     height: calc(100vh - 190px);
-    background-color: #fafafa;
+    background-color: $messages-color;
     padding-top: 35px;
     padding-left: 40px;
     @import "message";
   }
   .form{
-    background-color: #d2d2d2;
+    background-color: $form-color;
     height: 90px;
     padding-top: 20px;
     padding-right: 40px;
@@ -83,7 +78,7 @@ $light-gray: #999999;
           height: 50px;
           input{
             border-style: none;
-            color: #434a54;
+            color: $input-box-color;
             outline: none;
           }
         }
@@ -119,12 +114,12 @@ $light-gray: #999999;
 float: left;
 width: 300px;
 height: 100vh;
-background-color:#2f3e51;
-color:#000000;
+background-color: $chat-side-color;
+color: $black;
 &__side-header{
   display: flex;
   align-items: center;
-  background-color: #253141;
+  background-color: $side-header-color;
   height: 100px;
   padding-right: 20px;
   padding-bottom: 0px;
@@ -138,7 +133,7 @@ color:#000000;
     &__user-name{
       display: block;
       a {
-        color: #ffffff;
+        color:$white;
         text-decoration: none;
         font-size: 16px;
         }
@@ -152,7 +147,7 @@ color:#000000;
         padding-left: 5px;
       }
       a {
-        color: #ffffff;
+        color:$white;
         text-decoration: none;
         font-size: 16px;
       }
@@ -166,7 +161,7 @@ color:#000000;
     padding-right: 20px;
     padding-left: 20px;
     p {
-      color: #ffffff;
+      color: $white;
       text-decoration: none;
       font-weight: bold;
     }
