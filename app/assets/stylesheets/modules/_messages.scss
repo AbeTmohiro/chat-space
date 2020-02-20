@@ -131,18 +131,16 @@ color: $black;
     font-weight: bold;
     &__user-name{
       display: block;
-      a {
-        color:$white;
-        text-decoration: none;
-        font-size: 16px;
-        }
+      color:$white;
+      text-decoration: none;
+      font-size: 16px;
     }
     &__menu{
       width: 60px;
       display: flex;
       align-items: center;
       justify-content: flex-end;
-      &__edit-user{
+      li{
         padding-left: 5px;
       }
       a {
