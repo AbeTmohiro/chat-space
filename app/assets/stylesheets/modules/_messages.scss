@@ -162,6 +162,20 @@ color: $black;
       text-decoration: none;
       font-weight: bold;
     }
-    @import "group";
+    .group{
+      margin-bottom: 40px;
+      a{
+        text-decoration: none;
+      }
+      &__name{
+        margin-bottom: 5px;
+        font-size: 15px;
+        color: $white;
+      }
+      &__message{
+        font-size: 11px;
+        color: $white;
+      }
+    }  
   }
 }
