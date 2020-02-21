@@ -25,10 +25,8 @@
       }
       &__member-list{
         display: flex;
-        p{
-          font-size: 12px;
-          color:$light-gray;
-        }
+        font-size: 12px;
+        color:$light-gray;
       }
     }
     &__edit-btn{
