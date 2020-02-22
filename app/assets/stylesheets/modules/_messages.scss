@@ -46,6 +46,7 @@
     }
   }
   &__messages{
+    overflow: auto;
     height: calc(100vh - 190px);
     background-color: $messages-color;
     padding-top: 35px;
@@ -55,55 +56,37 @@
   .form{
     background-color: $form-color;
     height: 90px;
-    padding-top: 20px;
-    padding-right: 40px;
-    padding-bottom: 20px;
-    padding-left: 40px;
-    display: flex;
+    padding: 20px 40px 20px 40px;
     .new_message{
-      line-height: 50px;
-      padding-left: 10px;
-      padding-right: 10px;
-      width: 100%;
-      .input-box{
-        position: relative;
+      display: flex;
+      position: relative;
+      &__text{
         width: 100%;
-        background-color: $white;
-        display: flex;
-        &__text{
-          padding-left: 10px;
-          height: 50px;
-          input{
-            border-style: none;
-            color: $input-box-color;
-            outline: none;
-          }
-        }
-        &__image{
-          position: absolute;
-          right: 10px;
-          font-size: 1.3rem;
-          input{
-            display: none;
-          }
+        padding: 0px 40px 0px 10px;
+        height: 50px;
+        border-style: none;
+      }
+      &__image{
+        position: absolute;
+        font-size: 1.3rem;
+        right: 10px;
+        top: 10px;
+        input{
+          display: none;
         }
       }
-      .input-box:hover{
-        outline: 2px solid rgba($color: $sky-blue, $alpha: 0.5);
-      }
+      
     }
-    .submit-btn{
-      width: 100px;
-      line-height: 50px;
-      padding-right: 30px;
-      padding-left: 30px;
-      margin-left: 15px;
-      background-color: $sky-blue;
-      a{
-        color: $white;
-        text-decoration: none;
-      }
-    }
+      
+  .submit-btn{
+    width: 100px;
+    padding: 0px 30px 0px 30px;
+    margin-left: 15px;
+    background-color: $sky-blue;
+    color: $white;
+    text-decoration: none;
+  }
+    
   }
 }
 
@@ -151,6 +134,7 @@ color: $black;
 }
 
   &__groups{
+    overflow: auto;
     height: calc(100vh - 100px);
     padding-top: 20px;
     padding-right: 20px;

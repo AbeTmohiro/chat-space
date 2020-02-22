@@ -5,11 +5,9 @@
     display: flex;
   }
   &__upper-info__talker{
-    p{
-      font-size: 16px;
-      font-weight: bold;
-      color: $dark-gray;
-    }
+    font-size: 16px;
+    font-weight: bold;
+    color: $dark-gray;
   }
   &__upper-info__date{
     font-size: 12px;
@@ -17,9 +15,7 @@
     margin-left: 10px;
   }
   &__text{
-    p{
-      font-size: 14px;
-      color: 434a54;
-    }
+    font-size: 14px;
+    color: 434a54;
   }
 }
