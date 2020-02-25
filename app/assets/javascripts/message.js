@@ -22,11 +22,11 @@ $(function(){
    } else {
      var html =
       `<div class="chat-main__messages__message" data-message-id=${message.id}>
-         <div class="upper-message">
-           <div class="upper-message__user-name">
+         <div class="chat-main__messages__message__upper-info">
+           <div class="chat-main__messages__message__upper-info__talker">
              ${message.user_name}
            </div>
-           <div class="upper-message__date">
+           <div class="hat-main__messages__message__upper-info__date">
              ${message.created_at}
            </div>
          </div>
