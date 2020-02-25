@@ -1,2 +1,23 @@
-.messages
-  = render @messages
+.chat-main
+  .chat-main__main-header
+    .chat-main__main-header__left-box
+      .chat-main__main-header__left-box__current-group
+        = @group.name
+      .chat-main__main-header__left-box__member-list
+        %p Member : 
+        .chat-main__main-header__left-box__member-list__member
+          - @group.group_users.each do |group_user|
+            = group_user.user.name
+    .chat-main__main-header__edit-btn
+      =link_to edit_group_path(@group) do
+        Edit
+  .chat-main__messages
+    = render @messages
+  .form
+    =form_for [@group, @message] do |f|
+      = f.text_field :content, class:'new_message__text',placeholder: "type a message"
+      .new_message
+        = f.label :image, class: 'new_message__image' do
+          = icon('fas', 'image', class: 'icon')
+          = f.file_field :image, class: 'hidden'
+      = f.submit 'Send', class: 'submit-btn'
