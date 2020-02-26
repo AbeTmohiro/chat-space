@@ -6,15 +6,15 @@ $(function(){
       `<div class="chat-main__messages__message" data-message-id=${message.id}>
          <div class="chat-main__messages__message__upper-info">
            <div class="chat-main__messages__message__upper-info__talker">
-             ${message.user_name}
+            ${message.user_name}
            </div>
            <div class="chat-main__messages__message__upper-info__date">
-             ${message.date}
+            ${message.created_at}
            </div>
          </div>
          <div class="lower-message">
            <p class="lower-message__content">
-             ${message.content}
+            ${message.content}
            </p>
          </div>
          <img src=${message.image} >
@@ -27,8 +27,8 @@ $(function(){
             <div class="chat-main__messages__message__upper-info__talker">
               ${message.user_name}
             </div>
-            <div class="hat-main__messages__message__upper-info__date">
-              ${message.date}
+            <div class="chat-main__messages__message__upper-info__date">
+              ${message.created_at}
             </div>
           </div>
           <div class="lower-message">
