@@ -40,6 +40,7 @@ gem 'pry-rails'
 gem 'carrierwave'
 gem 'mini_magick'
 gem 'fog-aws'
+gem 'unicorn', '5.4.1'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
@@ -66,5 +67,5 @@ group :development do
 end
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 group :production do
-  gem 'unicorn', '5.4.1'
+
 end
