@@ -34,18 +34,19 @@ gem 'jbuilder', '~> 2.5'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
+gem 'haml-rails'
+gem 'font-awesome-sass'
+gem 'spring'
+gem 'devise'
+gem 'pry-rails'
+gem 'carrierwave'
+gem 'mini_magick'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri
   gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
-  gem 'haml-rails'
-  gem 'font-awesome-sass'
-  gem 'spring'
-  gem 'devise'
-  gem 'pry-rails'
-  gem 'carrierwave'
-  gem 'mini_magick'
+
   gem 'rspec-rails','~> 3.5'
   gem 'factory_bot_rails'
   gem 'rails-controller-testing'
