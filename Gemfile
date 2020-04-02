@@ -34,6 +34,15 @@ gem 'jbuilder', '~> 2.5'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
+gem 'haml-rails'
+#For use font-awesome in Rails
+gem 'font-awesome-sass'
+gem 'devise'
+gem 'pry-rails'
+gem 'mini_magick'
+gem 'carrierwave'
+gem 'fog-aws'
+
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
