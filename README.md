@@ -67,3 +67,4 @@ Things you may want to cover:
 - belongs_to :user
 
 1st commit
+2nd commit
