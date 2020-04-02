@@ -68,5 +68,4 @@ Things you may want to cover:
 
 1st commit
 2nd commit
-wrong commit
 4th commit
